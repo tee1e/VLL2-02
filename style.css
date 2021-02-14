@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+
+/*HEADER*/
+
+header .logo {
+    vertical-align: middle;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: #5f0f40;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+
+header h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    font-style: italic;
+    letter-spacing: 5px;
+    color: #0f4c5c;
+    text-transform: uppercase;
+}
+
+hr {
+    background-color: #e36414;
+    border: 0;
+    height: 1px;
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+nav {
+    margin: 0 40px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center; /*IE*/
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 15px 25px;
+}
+
+header nav ul li a {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #0f4c5c;
+    text-transform: uppercase;
+    text-decoration: none; 
+}
+
+header .header-banner {
+    width: 100%;
+    height: 250px;
+    background-image: url("img/top.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+/*MAIN*/ 
+
+main {
+    width: calc(100% - 100px);
+    padding: 0 50px;
+}
+
+.index-main {
+    display: block;
+    padding: 30px 0;
+}
+
+.index-main h3 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #5f0f40;
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.index-info {
+    display: flex;
+    flex-direction: row;
+} 
+
+.index-info p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 26px;
+    color: #0f4c5c;
+    text-align: left;
+}
+
+.index-info img {
+    display: none;
+}
+
+.gallery-h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: #5f0f40;
+    text-transform: uppercase;
+    text-align: left;
+    
+}
+
+.gallery-links {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.gallery-image {
+    margin: 20px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.post-header {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 3px;
+    line-height: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 2px -3px 4px #5f0f40;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery-image img {
+    width: 300px;
+}
+
+/*FOOTER*/
+
+footer {
+    width: calc(100% - 100px);
+    padding: 40px 50px 20px 50px;
+    margin-top: 20px;
+    background-color: #e36414;
+    overflow: hidden; 
+}
+
+footer ul {
+    width: fit-content;
+    float: left;
+}
+
+footer ul li {
+    display: block;
+    padding-bottom: 5px;
+}
+
+footer ul li p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.footer-sm {
+    width: 35px;
+    float: right;
+}
+
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 950px) {
+    
+header {
+    width: calc(100% - 100px);
+    padding: 0 50px;
+}
+    
+header .logo {
+    padding: 20px 30px;
+}
+    
+hr {
+    display: none;
+}
+
+nav {
+    margin: 0 200px;
+}
+
+.index-main {
+    padding: 30px 25px;
+}
+    
+.index-info img {
+    display: inherit;
+    align-self: flex-start;
+    object-fit: contain;
+    width: 300px;
+    margin-left: 80px;
+}
+
+.index-header {
+    display: none;
+}
+
+.gallery-links {
+    flex-flow: row nowrap;
+}
+
+.container img {
+    width: 25vw;
+}
+
+.post-header {
+    font-size: 2.5vw;
+}
+    
+.footer-sm {
+    width: 45px;
+}
+
+}
